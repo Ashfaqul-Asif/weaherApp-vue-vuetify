@@ -92,16 +92,13 @@
         loader: false,
         search: '',
         bgActive: false,
-             json_fields: {
-            'City name': 'name',
-            'City': 'city',
-            'Telephone': 'phone.mobile',
-            'Telephone 2' : {
-                field: 'phone.landline',
-                callback: (value) => {
-                    return `Landline Phone - ${value}`;
-                }
-            },
+        json_fields: {
+            'City': 'name',
+            'Country': 'sys.country',
+            'Temperature':'main.temp',
+            'Wind Speed':'wind.speed',
+            'Sunrise Time':'sys.sunrise',
+            'Sunset Time':'sys.sunset'
         },
       
         json_meta: [
